@@ -1,0 +1,16 @@
+.elements__grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 282px);
+  gap: 17px;
+  row-gap: 19px;
+  padding: 0;
+  justify-content: center;
+  grid-auto-flow: dense;
+}
+
+@media screen and (min-width: 880px) {
+  .elements__grid {
+    justify-content: normal;
+  }
+}

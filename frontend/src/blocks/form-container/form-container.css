@@ -1,0 +1,12 @@
+.form-container {
+  max-width: 280px;
+  margin: 0 auto;
+  background-color: black;
+  min-height: 60vh;
+}
+
+@media (min-width: 880px) {
+  .form-container {
+    max-width: 358px;
+  }
+}

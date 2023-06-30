@@ -1,0 +1,11 @@
+.elements {
+  margin: 0 auto;
+  max-width: 880px;
+  min-height: 50vh;
+}
+
+@media screen and (min-width: 880px) {
+  .elements {
+    min-height: 20vh;
+  }
+}

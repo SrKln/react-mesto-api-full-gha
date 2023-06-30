@@ -1,0 +1,13 @@
+.popup__image-container {
+  border-radius: 0;
+  margin: 136px auto auto;
+  position: relative;
+  padding: 0;
+  border: none;
+}
+
+@media (min-width: 880px) {
+  .popup__image-container {
+    margin: 90px auto;
+  }
+}

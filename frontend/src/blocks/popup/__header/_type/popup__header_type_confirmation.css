@@ -1,0 +1,9 @@
+.popup__header_type_confirmation {
+  margin: 26px 22px 47px 22px;
+}
+
+@media (min-width: 880px) {
+  .popup__header_type_confirmation {
+    margin: 34px 22px 21px 36px;
+  }
+}
