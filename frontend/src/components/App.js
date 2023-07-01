@@ -43,7 +43,7 @@ function App() {
       auth.checkToken(token).then((res) => {
         if (res) {
           setLoggedIn(true);
-          setEmail(res.data.email);
+          setEmail(res.email);
           navigate("/", { replace: true })
         }
 
