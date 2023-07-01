@@ -1,8 +1,8 @@
 {
-  "name": "react-mesto-auth",
+  "name": "react-mesto",
   "version": "0.1.0",
-  "description": "Mesto: портирование и работа с API",
-  "homepage": "https://srkln.github.io/react-mesto-auth/",
+  "description": "React Mesto-15",
+  "homepage": "https://dark-duck.nomoreparties.sbs",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
