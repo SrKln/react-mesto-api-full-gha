@@ -35,7 +35,7 @@ function App() {
 
   useEffect(() => {
     handleTokenCheck();
-  }, [])
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleTokenCheck = () => {
     if (localStorage.getItem('token')) {

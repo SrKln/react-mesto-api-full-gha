@@ -10,7 +10,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 130.193.39.157
+IP 130.193.39.157
 
 Frontend https://dark-duck.nomoreparties.sbs
 
