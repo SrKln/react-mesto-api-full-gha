@@ -1,4 +1,4 @@
-export const BASE_URL_AUTH = 'http://api.dark-duck.nomoreparties.sbs';
+export const BASE_URL_AUTH = 'https://api.dark-duck.nomoreparties.sbs';
 
 const checkStatus = (res) => {
   if (res.ok) {

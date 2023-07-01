@@ -70,7 +70,7 @@ class Api {
 
 
 export const api = new Api({
-  baseUrl: "http://api.dark-duck.nomoreparties.sbs",
+  baseUrl: "https://api.dark-duck.nomoreparties.sbs",
   headers: {
     "Authorization": `Bearer ${localStorage.getItem('token')}`,
     "Content-Type": "application/json",
