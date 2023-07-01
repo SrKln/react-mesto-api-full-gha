@@ -1,8 +1,8 @@
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
-const cors = require('cors');
 const mongoose = require('mongoose');
 const { errors } = require('celebrate');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
@@ -11,6 +11,7 @@ const { PORT = 3000, DB_ADDRESS = 'mongodb://127.0.0.1:27017/mestodb' } = proces
 const { limiterConfig } = require('./utils/config');
 
 const app = express();
+app.use(cors());
 
 const router = require('./routes');
 const centralizedErrorHandler = require('./middlewares/centralizedErrorHandler');
@@ -26,8 +27,6 @@ app.use(express.json());
 
 mongoose.connect(DB_ADDRESS);
 
-app.use(cors());
-
 app.get('/crash-test', () => {
   setTimeout(() => {
     throw new Error('Сервер сейчас упадёт');
@@ -42,5 +41,5 @@ app.use(errors());
 app.use(centralizedErrorHandler);
 
 app.listen(PORT, () => {
-  console.log('Сервер запущен');
+  console.log('Сервер запущен'); // eslint-disable-line no-console
 });
